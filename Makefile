@@ -56,7 +56,6 @@ Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c \
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c \
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim.c \
 Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_tim_ex.c \
-Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_pwr.c \
 Src/system_stm32g4xx.c  
 
 # ASM sources
@@ -88,6 +87,7 @@ BIN = $(CP) -O binary -S
 # CFLAGS
 #######################################
 # cpu
+CPU = -mcpu=cortex-m4
 
 
 # fpu
